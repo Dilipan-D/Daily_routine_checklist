@@ -1,20 +1,19 @@
-import React from 'react'
-import LineList from './LineList';
+import React from "react";
+import LineList from "./LineList";
 
-const Itemslist = ({items, handleCheck, handleClickk}) => {
+const Itemslist = ({ items, handleCheck, handleClickk }) => {
   return (
     <ul>
-    {items.map((item) => (
-        <LineList 
-        item = {item}
-        key={item.id}
-        handleCheck = {handleCheck}
-        handleClickk = {handleClickk}
+      {items.map((item) => (
+        <LineList
+          item={item}
+          key={item.id}
+          handleCheck={handleCheck}
+          handleClickk={handleClickk}
         />
+      ))}
+    </ul>
+  );
+};
 
-    ))}
-</ul>
-  )
-}
-
-export default Itemslist
+export default Itemslist;

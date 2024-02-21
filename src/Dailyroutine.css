@@ -1,18 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 22px;
 }
-body{
+
+body {
     min-height: 100vh;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 }
-.App{
+
+.App {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +29,7 @@ body{
     margin: auto;
 }
 
-header{
+header {
     width: 100%;
     background-color: darkred;
     color: antiquewhite;
@@ -34,7 +39,8 @@ header{
     align-items: center;
     font-size: 17px;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -43,7 +49,8 @@ main{
     align-items: center;
     overflow-y: auto;
 }
-footer{
+
+footer {
     width: 100%;
     padding: 0.25em;
     background-color: darkred;
@@ -53,27 +60,29 @@ footer{
 
 }
 
-ul{
+ul {
     width: 100%;
     list-style: none;
     padding: 0 0.25rem 0 0.25rem;
 }
 
-ul li::before{
+ul li::before {
     content: "\200B";
 }
 
-.hero{
+.hero {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0.5em 0 0.5em 0.5em ;
+    padding: 0.5em 0 0.5em 0.5em;
     margin: 0.25em 0;
     background-color: #eee;
 }
-.hero:first-child{
+
+.hero:first-child {
     margin-top: 0;
 }
+
 .hero input[type="checkbox"] {
     text-align: center;
     width: 2.5rem;
@@ -83,15 +92,15 @@ ul li::before{
     height: 48px;
     min-height: 48px;
     cursor: pointer;
-    margin-right:0.5rem ;
+    margin-right: 0.5rem;
 }
 
-.hero input [type="checkbox"]:focus + label {
+.hero input [type="checkbox"]:focus+label {
     text-decoration: underline;
 
 }
 
-.hero > label {
+.hero>label {
     font-size: 0.75rem;
     flex-grow: 1;
 }
@@ -105,6 +114,7 @@ ul li::before{
     color: darkred;
     cursor: pointer;
 }
+
 .hero svg:focus,
 .hero svg:hover {
 
@@ -121,14 +131,16 @@ ul li::before{
     padding: 0 0.5rem 0.25rem;
     border-bottom: 1px solid #eee;
 }
+
 .addForm label {
     position: absolute;
     left: -99999px;
 }
-.addForm input  [type = 'text']{
+
+.addForm input [type='text'] {
     flex-grow: 1;
     max-width: calc(100% - 50px);
-    min-height:  48px;
+    min-height: 48px;
     font-size: 1rem;
     padding: 0.25rem;
     border-radius: 0.25rem;
@@ -146,10 +158,11 @@ button {
     background-color: antiquewhite;
     color: darkred;
     cursor: pointer;
-    
+
 }
+
 button:focus,
-button:hover{
+button:hover {
     color: white;
     background-color: darkred;
     outline: none;
@@ -160,25 +173,22 @@ button:hover{
     display: flex;
     justify-content: flex-start;
     margin: 0.25rem 0 0;
-    padding:  0. 0.5rem 0.25rem;
+    padding: 0 0.5rem 0.25rem;
     border-bottom: 1px solid #eee;
 }
 
-.searchForm {
+.searchForm label {
     position: absolute;
     left: -99999px;
 }
 
-.searchForm input[type= 'text']{
+.searchForm input[type='text'] {
     flex-grow: 1;
     max-width: 100%;
     min-height: 48px;
     font-size: 1rem;
-    padding:  0.25rem;
+    padding: 0.25rem;
     border-radius: 0.25rem;
     outline: none;
 
 }
-
-
-
